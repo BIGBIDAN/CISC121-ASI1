@@ -1,0 +1,5 @@
+def solution(X, Y, D):
+    if (Y - X) % D != 0: #distance is not divisible by jump distance
+        return (Y - X) // D + 1
+    else: # distance is divisible by jump distance
+        return (Y - X) // D
