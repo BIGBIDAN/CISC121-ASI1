@@ -1,0 +1,8 @@
+def solution(A, K):
+    last = 8
+    for n in range(0 , K , 1): # how many times to rotate
+        last = A[len(A) - 1] #save last
+        for m in range(len(A) -1 , 0 , -1): #left shift to right
+            A[m] = A[m - 1] 
+        A[0] = last #first one = last one
+    return A
