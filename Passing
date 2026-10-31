@@ -1,8 +1,8 @@
 def solution(A):
     passing = 0
-    for n in range(0 , len(A) , 1):
-        for m in range(n + 1 , len(A) , 1):
-            if A[n] < A[m]:
+    for n in range(0 , len(A) , 1): # for every car
+        for m in range(n + 1 , len(A) , 1): # for every rest car
+            if A[n] < A[m]: # if is different direction
                 passing += 1
     if passing > 1000000000:
         return -1
