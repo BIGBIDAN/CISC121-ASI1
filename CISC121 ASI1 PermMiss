@@ -1,0 +1,6 @@
+def solution(A):
+    for n in range(0, len(A), 1):
+        if n + 1 not in A:
+            return n + 1
+
+print(solution([2 , 3, 4, 5]))
