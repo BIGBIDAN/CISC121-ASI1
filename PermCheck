@@ -1,0 +1,5 @@
+def solution(A):
+    for n in range(0, len(A), 1):
+        if n + 1 not in A: # missing number is not in the list 
+            return 0
+    return 1 # else true
